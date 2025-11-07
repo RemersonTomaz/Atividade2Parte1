@@ -114,3 +114,51 @@ console.log(newpalavra);
 
 
 ```
+
+##  Vantagem de usar **Template Strings** (``) em vez de concatenação com `+`
+
+As **template strings** são uma forma mais moderna e prática de **montar frases com variáveis** em JavaScript.  
+Elas usam **crases (``)** no lugar de aspas e permitem colocar variáveis dentro do texto sem precisar ficar usando o sinal de `+`.
+
+---
+
+###  Exemplo com concatenação usando `+`
+```js
+let produto = "teclado";
+let preco = 120;
+let mensagem = "O " + produto + " custa R$ " + preco + " reais.";
+console.log(mensagem);
+// Resultado: O teclado custa R$ 120 reais.
+```
+
+### Exemplo com Template String
+```
+let produto = "teclado";
+let preco = 120;
+let mensagem = `O ${produto} custa R$ ${preco} reais.`;
+console.log(mensagem);
+// Resultado: O teclado custa R$ 120 reais.
+```
+
+### Vantagens das Template Strings
+
+Mais simples e organizada
+→ Evita o uso de vários + e deixa a frase mais fácil de entender.
+
+Substituição direta de variáveis
+→ Basta usar ${variavel} dentro das crases para inserir o valor.
+
+Aceita várias linhas sem erro
+→ Dá pra escrever textos longos sem precisar usar \n.
+```
+let nome = "Mariana";
+let curso = "Desenvolvimento Web";
+let mensagem = `
+Aluna: ${nome}
+Curso: ${curso}
+Turno: Noite
+`;
+console.log(mensagem);
+```
+
+
