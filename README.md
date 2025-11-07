@@ -91,3 +91,26 @@ Para pegar dados salvos no localStorage e usar no programa.
 
 JSON.stringify()	Transforma um objeto em texto JSON	Usado pra enviar ou guardar dados
 JSON.parse()	Transforma um texto JSON em objeto	Usado pra ler ou usar dados recebidos
+
+### códigos
+
+```js
+
+let palavra = "JavaScript é baseada em ECMA Script";
+console.log(palavra.includes("Script"));
+// Resultado: true
+
+let palavra = "JavaScript é baseada em ECMA Script";
+let replacepalavra = palavra.replace("JavaScript", "");
+console.log(replacepalavra);
+// Resultado: " é baseada em ECMA Script"
+
+
+let palavra = "JavaScript é baseada em ECMA Script";
+let new = palavra.replace("baseada", "tem origem");
+console.log(new);
+// Resultado: "JavaScript é tem origem em ECMA Script"
+
+
+
+```
