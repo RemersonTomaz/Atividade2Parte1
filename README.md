@@ -107,8 +107,8 @@ console.log(replacepalavra);
 
 
 let palavra = "JavaScript é baseada em ECMA Script";
-let new = palavra.replace("baseada", "tem origem");
-console.log(new);
+let newpalavra = palavra.replace("baseada", "tem origem");
+console.log(newpalavra);
 // Resultado: "JavaScript é tem origem em ECMA Script"
 
 
