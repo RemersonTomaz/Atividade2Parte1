@@ -64,3 +64,30 @@ const textoJSON = JSON.stringify(aluno);
 console.log(textoJSON);
 // Resultado: {"nome":"Lucas","idade":18,"curso":"Informática"}
 ```
+
+Quando usar:
+
+Para enviar dados para uma API ou servidor.
+
+Para salvar dados no localStorage do navegador.
+
+JSON.parse()
+
+Essa função faz o contrário: ela transforma um texto JSON em um objeto JavaScript.
+Usamos quando queremos pegar um texto que veio de fora (como de uma API) e usar os dados no código.
+
+Exemplo:
+const textoJSON = '{"nome":"Lucas","idade":18,"curso":"Informática"}';
+const aluno = JSON.parse(textoJSON);
+
+console.log(aluno.curso);
+// Resultado: Informática
+
+
+### Quando usar:
+
+Para ler dados que vieram de uma API.
+Para pegar dados salvos no localStorage e usar no programa.
+
+JSON.stringify()	Transforma um objeto em texto JSON	Usado pra enviar ou guardar dados
+JSON.parse()	Transforma um texto JSON em objeto	Usado pra ler ou usar dados recebidos
