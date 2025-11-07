@@ -45,3 +45,22 @@ Conversão prática:
 É fácil transformar um JSON em um objeto dentro do código, sem precisar de muito esforço.
 
 O JSON é popular porque é simples, leve e funciona em qualquer lugar, sendo o jeito mais comum de trocar dados na internet hoje em dia.
+
+## Diferença entre `JSON.stringify()` e `JSON.parse()`
+
+Essas duas funções servem para **converter dados** entre **objeto JavaScript** e **texto no formato JSON**, mas cada uma faz o contrário da outra.
+
+---
+
+### `JSON.stringify()`
+Essa função **transforma um objeto em texto JSON**.  
+Usamos quando queremos **enviar os dados para algum lugar** ou **guardar** em algum local que só aceita texto.
+
+#### Exemplo:
+```js
+const aluno = { nome: "Lucas", idade: 18, curso: "Informática" };
+const textoJSON = JSON.stringify(aluno);
+
+console.log(textoJSON);
+// Resultado: {"nome":"Lucas","idade":18,"curso":"Informática"}
+```
